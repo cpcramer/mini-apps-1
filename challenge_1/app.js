@@ -76,40 +76,40 @@ squareFive.addEventListener("click", () => {
 
 squareSix.addEventListener("click", () => {
     if (prevAnswer === "" || prevAnswer === "O") {
-        squareOne.innerHTML = "X";
+        squareSix.innerHTML = "X";
         prevAnswer = 'X';
     } else {
-        squareOne.innerHTML = "O";
+        squareSix.innerHTML = "O";
         prevAnswer = 'O';
     }
 })
 
 squareSeven.addEventListener("click", () => {
     if (prevAnswer === "" || prevAnswer === "O") {
-        squareOne.innerHTML = "X";
+        squareSeven.innerHTML = "X";
         prevAnswer = 'X';
     } else {
-        squareOne.innerHTML = "O";
+        squareSeven.innerHTML = "O";
         prevAnswer = 'O';
     }
 })
 
 squareEight.addEventListener("click", () => {
     if (prevAnswer === "" || prevAnswer === "O") {
-        squareOne.innerHTML = "X";
+        squareEight.innerHTML = "X";
         prevAnswer = 'X';
     } else {
-        squareOne.innerHTML = "O";
+        squareEight.innerHTML = "O";
         prevAnswer = 'O';
     }
 })
 
 squareNine.addEventListener("click", () => {
     if (prevAnswer === "" || prevAnswer === "O") {
-        squareOne.innerHTML = "X";
+        squareNine.innerHTML = "X";
         prevAnswer = 'X';
     } else {
-        squareOne.innerHTML = "O";
+        squareNine.innerHTML = "O";
         prevAnswer = 'O';
     }
 })
