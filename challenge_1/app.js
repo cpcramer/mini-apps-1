@@ -52,7 +52,8 @@ const winConditions = () => {
         setTimeout(() => alert('X WINS'), 100);
 
     // Row win conditions for 'O'
-    } else if((boardState[0] === 'O' && boardState[1] === 'O' && boardState[2] === 'O') 
+    } 
+    else if((boardState[0] === 'O' && boardState[1] === 'O' && boardState[2] === 'O') 
     || ((boardState[3] === 'O' && boardState[4] === 'O' && boardState[5] === 'O')) 
     || ((boardState[6] === 'O' && boardState[7] === 'O' && boardState[8] === 'O'))
 
@@ -141,7 +142,7 @@ squareSix.addEventListener("click", () => {
         prevAnswer = 'X';
     } else {
         squareSix.innerHTML = "O";
-        boardState[5] = 'X';
+        boardState[5] = 'O';
         prevAnswer = 'O';
     }
     winConditions();
