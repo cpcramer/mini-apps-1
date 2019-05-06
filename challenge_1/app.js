@@ -14,9 +14,8 @@ const table = document.getElementById('table');
 let boardState = 
         [ null, null, null,
           null, null, null,
-          null, null, null ]
+          null, null, null ];
 
-// Alternate from X to O
 button.addEventListener("click", () => {
     squareOne.innerHTML = '';
     squareTwo.innerHTML = '';
@@ -27,7 +26,7 @@ button.addEventListener("click", () => {
     squareSeven.innerHTML = '';
     squareEight.innerHTML = '';
     squareNine.innerHTML = '';
-    boardState = [ null, null, null, null, null, null, null, null, null ]
+    boardState = [ null, null, null, null, null, null, null, null, null ];
 })
 
 // Switch Answers from X to O
@@ -44,9 +43,13 @@ const winConditions = () => {
     // Columns win conditions for 'X'
     || ((boardState[0] === 'X' && boardState[3] === 'X' && boardState[6] === 'X'))
     || ((boardState[1] === 'X' && boardState[4] === 'X' && boardState[7] === 'X'))
-    || ((boardState[2] === 'X' && boardState[5] === 'X' && boardState[8] === 'X'))) {
+    || ((boardState[2] === 'X' && boardState[5] === 'X' && boardState[8] === 'X'))
+    
+    // diagonal wins for 'X'
+    || ((boardState[0] === 'X' && boardState[4] === 'X' && boardState[8] === 'X'))
+    || ((boardState[2] === 'X' && boardState[4] === 'X' && boardState[6] === 'X'))) {
 
-        console.log('X WINS');
+        alert('X WINS');
 
     // Row win conditions for 'O'
     } else if((boardState[0] === 'O' && boardState[1] === 'O' && boardState[2] === 'O') 
@@ -56,9 +59,13 @@ const winConditions = () => {
     // Columns win conditions for 'O'
     || ((boardState[0] === 'O' && boardState[3] === 'O' && boardState[6] === 'O'))
     || ((boardState[1] === 'O' && boardState[4] === 'O' && boardState[7] === 'O'))
-    || ((boardState[2] === 'O' && boardState[5] === 'O' && boardState[8] === 'O'))) {
+    || ((boardState[2] === 'O' && boardState[5] === 'O' && boardState[8] === 'O'))
 
-        console.log('O WINS');
+    // diagonal wins for 'X'
+    || ((boardState[0] === 'O' && boardState[4] === 'O' && boardState[8] === 'O'))
+    || ((boardState[2] === 'O' && boardState[4] === 'O' && boardState[6] === 'O'))) {
+
+        alert('O WINS');
     } 
 }
 
