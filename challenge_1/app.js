@@ -8,44 +8,53 @@ let squareSix = document.getElementById('six');
 let squareSeven = document.getElementById('seven');
 let squareEight = document.getElementById('eight');
 let squareNine = document.getElementById('nine');
+let clone = document.getElementById('table');
 
 button.addEventListener("click", () => {
-    console.log('HELLO');
+    squareOne.innerHTML = '';
+    squareTwo.innerHTML = '';
+    squareThree.innerHTML = '';
+    squareFour.innerHTML = '';
+    squareFive.innerHTML = '';
+    squareSix.innerHTML = '';
+    squareSeven.innerHTML = '';
+    squareEight.innerHTML = '';
+    squareNine.innerHTML = '';
 })
 
 squareOne.addEventListener("click", () => {
-    console.log('ONE');
+    squareOne.innerHTML = "X";
 })
 
 squareTwo.addEventListener("click", () => {
-    console.log('TWO');
+    squareTwo.innerHTML = "X";
 })
 
 squareThree.addEventListener("click", () => {
-    console.log('THREE');
+    squareThree.innerHTML = "X";
 })
 
 squareFour.addEventListener("click", () => {
-    console.log('FOUR');
+    squareFour.innerHTML = "X";
 })
 
 squareFive.addEventListener("click", () => {
-    console.log('FIVE');
+    squareFive.innerHTML = "X";
 })
 
 squareSix.addEventListener("click", () => {
-    console.log('SIX');
+    squareSix.innerHTML = "X";
 })
 
 squareSeven.addEventListener("click", () => {
-    console.log('Seven');
+    squareSeven.innerHTML = "X";
 })
 
 squareEight.addEventListener("click", () => {
-    console.log('EIGHT');
+    squareEight.innerHTML = "X";
 })
 
 squareNine.addEventListener("click", () => {
-    console.log('NINE');
+    squareNine.innerHTML = "X";
 })
 
