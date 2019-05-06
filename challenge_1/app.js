@@ -49,7 +49,7 @@ const winConditions = () => {
     || ((boardState[0] === 'X' && boardState[4] === 'X' && boardState[8] === 'X'))
     || ((boardState[2] === 'X' && boardState[4] === 'X' && boardState[6] === 'X'))) {
 
-        alert('X WINS');
+        setTimeout(() => alert('X WINS'), 100);
 
     // Row win conditions for 'O'
     } else if((boardState[0] === 'O' && boardState[1] === 'O' && boardState[2] === 'O') 
@@ -65,7 +65,7 @@ const winConditions = () => {
     || ((boardState[0] === 'O' && boardState[4] === 'O' && boardState[8] === 'O'))
     || ((boardState[2] === 'O' && boardState[4] === 'O' && boardState[6] === 'O'))) {
 
-        alert('O WINS');
+        setTimeout(() => alert('0 WINS'), 100);
     } 
 }
 

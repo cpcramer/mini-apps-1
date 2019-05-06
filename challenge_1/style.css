@@ -1,6 +1,8 @@
 body {
     text-align: center;
-    background-color: lightgrey;
+    font-family: 'Lato', sans-serif;
+    background: rgb(2,159,220);
+    background: linear-gradient(90deg, rgba(2,159,220,1) 57%, rgba(1,187,239,1) 71%, rgba(1,200,247,1) 87%);
 }
 
 h1 {
@@ -12,20 +14,36 @@ table {
     margin-right:auto;
     width: 300px;
     height: 300px;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 table, th, td {
-    border: 1px solid black;
-    width: 300px;
+    border: 2px solid black;
+    width: 150px;
     height: 100px;
+    background: white;
   }
 
 td {
     font-size: 30px;
+    width: 150px;
+    height: 100px;
+}
+
+td:hover {
+    cursor: pointer;
+    background-color: lightgrey;
 }
 
 button {
     width: 200px;
     font-size: 20px;
     margin-top: 50px;
+}
+
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
 }
