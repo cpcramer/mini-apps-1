@@ -22,39 +22,95 @@ button.addEventListener("click", () => {
     squareNine.innerHTML = '';
 })
 
+let prevAnswer = "";
+
 squareOne.addEventListener("click", () => {
-    squareOne.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareOne.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareOne.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareTwo.addEventListener("click", () => {
-    squareTwo.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareTwo.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareTwo.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareThree.addEventListener("click", () => {
-    squareThree.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareThree.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareThree.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareFour.addEventListener("click", () => {
-    squareFour.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareFour.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareFour.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareFive.addEventListener("click", () => {
-    squareFive.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareFive.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareFive.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareSix.addEventListener("click", () => {
-    squareSix.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareOne.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareOne.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareSeven.addEventListener("click", () => {
-    squareSeven.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareOne.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareOne.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareEight.addEventListener("click", () => {
-    squareEight.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareOne.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareOne.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
 squareNine.addEventListener("click", () => {
-    squareNine.innerHTML = "X";
+    if (prevAnswer === "" || prevAnswer === "O") {
+        squareOne.innerHTML = "X";
+        prevAnswer = 'X';
+    } else {
+        squareOne.innerHTML = "O";
+        prevAnswer = 'O';
+    }
 })
 
