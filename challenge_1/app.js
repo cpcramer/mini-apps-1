@@ -61,7 +61,7 @@ const winConditions = () => {
     || ((boardState[1] === 'O' && boardState[4] === 'O' && boardState[7] === 'O'))
     || ((boardState[2] === 'O' && boardState[5] === 'O' && boardState[8] === 'O'))
 
-    // diagonal wins for 'X'
+    // diagonal wins for 'O'
     || ((boardState[0] === 'O' && boardState[4] === 'O' && boardState[8] === 'O'))
     || ((boardState[2] === 'O' && boardState[4] === 'O' && boardState[6] === 'O'))) {
 
