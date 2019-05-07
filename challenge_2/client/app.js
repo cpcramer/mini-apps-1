@@ -1,5 +1,3 @@
-// may use jQuery
-
 let submitButton = document.getElementById('submitButton');
 
 submitButton.addEventListener('click', (e) => {
@@ -7,8 +5,12 @@ submitButton.addEventListener('click', (e) => {
     let data = document.getElementById("textbox").value;
     fetch('http://localhost:3001/', {
         method: "POST", 
-        body: JSON.stringify(data), 
+        mode: "no-cors", 
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: data, 
     }).then( (response) => {
-        console.log(response);
-    });
+        console.log(response.json())
+        console.log(response.text())
+    })
 })
+

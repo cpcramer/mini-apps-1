@@ -8,14 +8,21 @@ app.use(express.static(path.join(__dirname, 'client')));
 
 // you need to use bodyParser() if you want the form data to be available in req.body
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
 app.post('/', (req, res) => {
-    //To specify what origins have access to the resource, you need to add the Access-Control-Allow-Origin header to your response. It will be interpreted by the browser of the visitor of your site.
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3001');
+
     console.log(req.body);
-    res.send();
+    res.send('testing testing');
+
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
