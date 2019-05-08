@@ -9,7 +9,7 @@ class App extends React.Component {
         this.state = {currentPage: 0};
     }
 
-    handleClick = () => {
+    handleClick () {
         console.log('handle click is working');
         if(this.state.currentPage === 2){
             this.setState({currentPage: 0});
@@ -34,7 +34,7 @@ class App extends React.Component {
 
         <div className='message-box'>
             <h1>Account creation</h1>
-            < myForm currentPage={currentPage}/>
+            {/* < myForm currentPage={currentPage}/> */}
                 { myForm }
         </div>
     
@@ -43,9 +43,9 @@ class App extends React.Component {
 
 // Form 1 -> collects name, email, and password for account creation.
 function FormOne (props) {
-
+    console.log(props);
     return (
-
+        
     <div className='formOne'>
 
       <h1>Form One - Account Creation</h1>
