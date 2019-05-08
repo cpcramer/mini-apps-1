@@ -6,10 +6,11 @@ const port = 3000;
 const database = require('./database.js');
 
 // middleware
+app.use(express.static('public'))
 
 // routes
 
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
     database.query("SELECT * FROM practice;", (err, data) => {
         if(err){
             console.log('error in database query:', err);
@@ -21,7 +22,7 @@ app.get('/', (req, res) => {
     })
 });
 
-app.post('/', (req, res) => {
+app.post('/test', (req, res) => {
     database.query("INSERT INTO practice (username, age) VALUES ('chad', 23);", (err, data) => {
         if(err){
             console.log("ERROR", err);
