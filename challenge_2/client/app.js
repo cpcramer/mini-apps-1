@@ -17,14 +17,17 @@ let submitButton = document.getElementById('submitButton');
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
     let data = document.getElementById("textbox").value;
-    $.ajax({
-        method: "POST", 
-        url: 'http://localhost:3001/',
-        mode: "no-cors", 
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: JSON.stringify(data),
-        success: (res) => {
-            console.log(res);            
-        }
-    });
+    // $.ajax({
+    //     method: "POST", 
+    //     url: 'http://localhost:3001/',
+    //     mode: "no-cors", 
+    //     headers: { "content-type": "application/json" },
+    //     body: data,
+    //     success: (res) => {
+    //         console.log(res);            
+    //     }
+    // });
+    $.post('http://localhost:3001/', ( data )).done(function(data){
+        console.log(data);
+    })
 });

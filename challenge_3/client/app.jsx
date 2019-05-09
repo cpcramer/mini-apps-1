@@ -19,6 +19,7 @@ class App extends React.Component {
     }
 
     render () {
+
         let currentPage = this.state.currentPage;
         let myForm;
         
@@ -34,7 +35,6 @@ class App extends React.Component {
 
         <div className='message-box'>
             <h1>Account creation</h1>
-            {/* < myForm currentPage={currentPage}/> */}
                 { myForm }
         </div>
     
@@ -48,7 +48,7 @@ function FormOne (props) {
         
     <div className='formOne'>
 
-      <h1>Form One - Account Creation</h1>
+      <h1>Form One</h1>
 
       <form >
         Name: <input type = "text" name = "first_name" />
