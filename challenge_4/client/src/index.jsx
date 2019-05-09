@@ -19,14 +19,17 @@ class App extends React.Component {
         }
     }
 
+    clickHandler(){
+        console.log('you clicked a button');
+    }
+
     render () {
       return (
       <div className='board'>
 
         <table id="table">
-            < Board />
+            < Board click={this.clickHandler.bind(this)}/>
         </table>
-
       </div>
       )}
   }

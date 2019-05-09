@@ -1,0 +1,7 @@
+-- CREATE DATABASE ConnectFour;
+
+CREATE TABLE Winner(   
+   NAME VARCHAR(50),
+   COLOR VARCHAR(50),
+   WINS INT
+);

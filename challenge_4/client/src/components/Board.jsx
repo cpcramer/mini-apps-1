@@ -5,12 +5,12 @@ import Row from './Row.jsx';
 function Board (props) {
     return (
         <tbody id="row">
-            < Row />
-            < Row />
-            < Row />
-            < Row />
-            < Row />
-            < Row />
+            < Row click={props.click}/>
+            < Row click={props.click}/>
+            < Row click={props.click}/>
+            < Row click={props.click}/>
+            < Row click={props.click}/>
+            < Row click={props.click}/>
         </tbody>
     )
 }

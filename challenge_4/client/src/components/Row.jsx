@@ -7,13 +7,13 @@ function Row (props) {
 
     return (
         <tr id='circle'>
-            < Circle /> 
-            < Circle /> 
-            < Circle /> 
-            < Circle /> 
-            < Circle /> 
-            < Circle /> 
-            < Circle /> 
+            < Circle click={props.click}/> 
+            < Circle click={props.click}/> 
+            < Circle click={props.click}/> 
+            < Circle click={props.click}/> 
+            < Circle click={props.click}/> 
+            < Circle click={props.click}/> 
+            < Circle click={props.click}/> 
         </tr>
     )
 }

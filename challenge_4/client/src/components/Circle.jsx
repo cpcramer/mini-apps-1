@@ -6,7 +6,7 @@ function Circle (props) {
 
     return (
     
-        <td id="data">X</td>
+        <td id="data" onClick={props.click}>X</td>
     
     )
 }
