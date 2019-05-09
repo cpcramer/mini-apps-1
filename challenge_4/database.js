@@ -12,7 +12,7 @@ connection.connect(function(err) {
       return;
     }
    
-    console.log('connected as id ' + connection.threadId);
+    console.log('connected! to database Woo');
   });
  
 connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {

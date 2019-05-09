@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-import Board from './components/Component1.jsx'
-import Row from './components/Component2.jsx'
-import Circle from './components/Component3.jsx'
-
+import Board from './components/Board.jsx'
 
 class App extends React.Component {
 
@@ -26,7 +23,7 @@ class App extends React.Component {
       return (
       <div className='board'>
 
-        <table>
+        <table id="table">
             < Board />
         </table>
 

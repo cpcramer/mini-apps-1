@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import Row from 'Component2';
+import Row from './Row.jsx';
 
 // Board component (1)
 function Board (props) {
     return (
-    <div id="table">
-        <tbody>
+        <tbody id="row">
             < Row />
             < Row />
             < Row />
@@ -14,7 +12,6 @@ function Board (props) {
             < Row />
             < Row />
         </tbody>
-    </div>
     )
 }
 

@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import Circle from '/Component3';
+import Circle from './Circle.jsx';
 
 // Row component (6 rows, 7 wide )
 
 function Row (props) {
 
     return (
-    <div id='row'>
-        <tr>
+        <tr id='circle'>
             < Circle /> 
             < Circle /> 
             < Circle /> 
@@ -17,7 +15,6 @@ function Row (props) {
             < Circle /> 
             < Circle /> 
         </tr>
-    </div>
     )
 }
 
