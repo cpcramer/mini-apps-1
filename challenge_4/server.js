@@ -7,13 +7,23 @@ const bodyParser = require('body-parser')
 const database = require('./database.js');
 
 // middleware
+    // handle CORS request
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+    });
+
     // bodyparser 
-    app.use(bodyParser.json());
+    app.use(bodyParser.json()); // <--- Here
+    
+
 
 // routes
-app.get('/', (req, res) => {
-    let myQuery = `INSERT INTO Winner (name, color, wins) VALUES ("chad", "blue", 1);`;
-    database.query(myQuery, function (error, results) {
+app.post('/test', (req, res) => {
+    console.log(req.body);
+    const myQuery = `INSERT INTO Winner (name, color, wins) VALUES ("${req.body.name}", "${req.body.color}", ${req.body.age});`;
+    database.query(myQuery, (error, results) => {
         if (error){
             console.log('error in server get', error);
             res.end();
@@ -24,7 +34,7 @@ app.get('/', (req, res) => {
       });
 });
 
-app.post('/', (req, res) => res.send('Hello post'));
+// app.post('/', (req, res) => res.send('Hello post'));
 
 
 

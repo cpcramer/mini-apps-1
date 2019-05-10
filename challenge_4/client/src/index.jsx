@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-
+import axios from 'axios';
 import Board from './components/Board.jsx'
 
 class App extends React.Component {
@@ -18,9 +18,15 @@ class App extends React.Component {
                 ]
         }
     }
-
+    
     clickHandler(){
-        console.log('you clicked a button');
+        axios.post('http://localhost:3000/test', {name: 'dog', color: 'purple', age: 3 })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
     render () {

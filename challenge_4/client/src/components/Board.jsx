@@ -3,6 +3,7 @@ import Row from './Row.jsx';
 
 // Board component (1)
 function Board (props) {
+
     return (
         <tbody id="row">
             < Row click={props.click}/>
